@@ -1,0 +1,27 @@
+name: Bug
+description: Reporte um bug reproduzível
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: O que está acontecendo e o que era esperado?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Passos para reproduzir
+      description: Inclua comandos e entradas.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: O que precisa estar verdadeiro para considerar resolvido?
+    validations:
+      required: true
+
