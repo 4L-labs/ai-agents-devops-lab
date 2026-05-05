@@ -5,10 +5,11 @@ def parse_duration_seconds(value: str) -> int:
     - "2m"  => 120
     - "1h"  => 3600
     """
+    value = value.strip()
     if not value:
         raise ValueError("duration is empty")
 
-    unit = value[-1]
+    unit = value[-1].lower()
     number_part = value[:-1]
 
     if unit == "s":
@@ -24,4 +25,3 @@ def parse_duration_seconds(value: str) -> int:
     if seconds < 0:
         raise ValueError("duration must be >= 0")
     return seconds
-
