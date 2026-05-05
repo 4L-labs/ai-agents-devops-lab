@@ -4,6 +4,11 @@ Este repositório é um lab prático para demonstrar um fluxo real com **agentes
 
 **issue → Codex CLI → commits → PR via `gh` → GitHub Actions valida**
 
+Artefatos “palpáveis” deste lab:
+
+- Issue exemplo: https://github.com/4L-labs/ai-agents-devops-lab/issues/1
+- PR exemplo (resolvido): https://github.com/4L-labs/ai-agents-devops-lab/pull/2
+
 ## Pré-requisitos
 
 - Python 3.11+ (ou 3.10+)
